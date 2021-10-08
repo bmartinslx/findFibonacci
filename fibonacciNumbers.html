@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        My Javascript example
+        </title>         
+<!-- This is where all my javascript functions go -->   
+        <script>      
+           function theAlert(theMax)  {
+                    var maxNumber= Number(theMax);
+                    var  strOutput = " ";
+                    for(i=0; i < maxNumber; i++)  
+                    { strOutput = strOutput + i.toString() + " ";  }
+                    document.getElementById("userOutput").innerHTML = strOutput;  }  
+            
+        </script>    
+    </head>  
+    <body>
+    <fieldset>
+        <h1 style="color:green; text-align: center">Show Fibonacci List</h1>
+        <label style="color:blue; font-size: 20px;"><b>Input a number to find fibonacci:</b> </label>
+        <input  type="text" id="txtInput" />
+    <br><br><br>
+        <input type="button" value="Find it" onclick="theAlert(txtInput.value)" />
+        <p id="userOutput" style="color:red;"></p>
+    
+    </fieldset>
+
+    
+    </body>   
+</html>
